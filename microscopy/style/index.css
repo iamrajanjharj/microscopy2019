@@ -1,0 +1,103 @@
+	body
+	{
+		color: #FFFFFF;
+		font-family: sans-serif;
+	}
+
+	#container
+	{
+		background: #FFFFFF;
+	}
+
+	#header
+	{
+		background: #e74c3c;
+		font-family: 'Francois One', sans-serif;
+		padding: 10px;
+		height: 120px;
+		width: 98.4%;
+		box-shadow: 0px 0px 8px 0px #000000;
+		position: absolute;
+		top:0;
+		left: 0;
+	}
+
+	#title2,#title3,#title4
+	{
+		position: relative;
+		top: -10px;
+		margin-bottom: -19px;
+		font-weight: normal;
+	}
+
+	#title2
+	{
+		font-size: 170%;
+	}
+
+	#title1
+	{
+		position: relative;
+		top: -10px;
+		margin-bottom: -25px;
+		font-weight: normal;
+	}
+
+	#logo
+	{
+		position: relative;
+		float: left;
+	}
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: absolute;
+  top: 23.5%;
+  left: -5px;
+  width: 100.5%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+	

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Microscopy 2019</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	
+	<style type="text/css">
+	
+
+
+	
+	</style>
+
+	<script type="text/javascript" src="script/index.js"></script>
+
+</head>
+<body>
+
+	<div id="cover"></div>
+
+	<div id="container">
+		<div id="header">
+			<img src="img/logo.png" id="logo" height="120" />
+		
+			<CENTER>
+
+				<h4 id="title1"><i>National Conference on</i></h4>
+				<h2 id="title2">Advances in Microscopy and Foldscope</h2>
+				<h5 id="title3">(Under the DBT Foldscope initiative)</h5>
+				<h4 id="title4">15th &hyphen; 16th March, 2019</h4>
+
+			</CENTER>
+
+			
+		</div>
+		<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://www.ekato.com/fileadmin/user_upload/Bilder/Branchen/Biotechnologie/__Biotechnologie_1920x480__NEU.jpg" style="width:100%">
+  <div class="text">Your image information</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+  <div class="text">Your image information</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://101trading.co.uk/wp-content/uploads/2015/04/horizon_00364590-1030x412.jpg" style="width:100%">
+  <div class="text">Your image information</div>
+</div>
+
+</div>
+<br>
+
+</div>
+
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 4000); 
+}
+</script>
+
+</body>
+</html>
