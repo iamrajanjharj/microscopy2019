@@ -1,12 +1,16 @@
 	body
 	{
 		color: #FFFFFF;
+		background: whitesmoke;
 		font-family: sans-serif;
 	}
 
 	#container
 	{
-		background: #FFFFFF;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
 
 	#cover
@@ -24,36 +28,215 @@
 
 	#header
 	{
+		position: relative;
+		top:0;
+		left: 0;
 		background: #bf1918;
 		font-family: 'Francois One', sans-serif;
 		padding: 5px;
 		height: 120px;
-		width: 100vw;
+		width: 99.2%;
 		box-shadow: 0px 0px 8px 0px #000000;
-		position: absolute;
-		top:0;
-		left: 0;
-	}
-
-	#title2,#title3,#title4
-	{
-		position: relative;
-		top: -10px;
-		margin-bottom: -19px;
-		font-weight: normal;
-	}
-
-	#title2
-	{
-		font-size: 170%;
 	}
 
 	#title1
 	{
 		position: relative;
-		top: -10px;
-		margin-bottom: -25px;
+		top: -20px;
 		font-weight: normal;
+		font-family: 'Francois One', sans-serif;
+	}
+
+	#title2
+	{
+		position: relative;
+		top: -50px;
+		font-weight: normal;
+		font-family: 'Francois One', sans-serif;
+	}
+
+	#title3
+	{
+		position: relative;
+		top: -77px;
+		left: 4%;
+		width: 50%;
+		font-weight: normal;
+		font-family: 'Francois One', sans-serif;
+	}
+
+	#title4
+	{
+		position: relative;
+		top: -95px;
+		left: 3.7%;
+		width: 50%;
+		font-weight: normal;
+		font-family: 'Francois One', sans-serif;
+		text-decoration: underline;
+	}
+
+	#navBar
+	{
+		position: relative;
+		height: auto;
+		width: 100%;
+		top: -17.7px;
+		left: 0;
+		background: #333333;
+	}
+
+		ul.topnav {
+	  list-style-type: none;
+	  font-size: 16px;
+	  margin: 0;
+	  margin-left: 30%;	
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	ul.topnav li {float: left;}
+
+		ul.topnav li a {
+	  display: block;
+	  color: white;
+	  height: 100%;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	ul.topnav li a:hover:not(.active)
+	{
+		background-color: #111;
+		text-decoration: underline;
+	}
+
+	ul.topnav li a.active 
+	{
+		background-color: #111;
+		text-decoration: underline;
+	}
+
+
+	#menu
+	{
+		
+		position: absolute;
+		left: 87%;
+		top: 65px;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+	}
+
+
+	#menu>.menu_line
+	{
+		position: relative;
+		height: 5px;
+		width: 100%;
+		background: #FFFFFF;
+		margin-bottom: 5px;
+		margin-top: 7px;
+		border-radius: 10px;
+	}
+
+
+	@media screen and (min-width:651px)
+	{
+		#title1
+		{
+			font-size: 20px;
+		}
+
+		#title2
+		{
+			font-size: 30px;
+		}
+
+		#title3
+		{
+			font-size: 15px;
+		}
+
+		#title4
+		{
+			font-size: 12px;
+		}
+	}
+
+	@media screen and (max-width:650px)
+	{
+		#title1
+		{
+			font-size: 16px;
+			top: -15px;
+		}
+
+		#title2
+		{
+			font-size: 20px;
+			top: -35px;
+		}
+
+		#title3
+		{
+			font-size: 15px;
+			top: -57px;
+			left: 1%;
+		}
+
+		#title4
+		{
+			font-size: 12px;
+			top: -70px;
+			left: 9%;
+		}
+	}
+
+	@media screen and (max-width:400px)
+	{
+		#title1
+		{
+			font-size: 16px;
+			top: -15px;
+		}
+
+		#title2
+		{
+			font-size: 20px;
+			top: -35px;
+		}
+
+		#title3
+		{
+			font-size: 13px;
+			top: -55px;
+			left: 11%;
+		}
+
+		#title4
+		{
+			font-size: 11px;
+			top: -77px;
+			left: 11%;
+		}
+
+		#menu
+		{
+			top: 62px;
+			height: 35px;
+			width: 35px;
+			left: 89%;
+		}
+
+		#menu>.menu_line
+		{
+			margin-top: 3px;
+			margin-bottom: 5px;
+		}
 	}
 
 	#logo
@@ -63,27 +246,6 @@
 	}
 
 
-#menu
-{
-	
-	position: absolute;
-	left: 87%;
-	top: 65px;
-	height: 50px;
-	width: 50px;
-	cursor: pointer;
-}
-
-#menu>.menu_line
-{
-	position: relative;
-	height: 5px;
-	width: 100%;
-	background: #FFFFFF;
-	margin-bottom: 5px;
-	margin-top: 7px;
-	border-radius: 10px;
-}
 
 #menu_container
 {
@@ -130,16 +292,68 @@
 
 
 
+#content
+{
+	position: relative;
+	top: 100%;
+	left: 2%;
+	box-shadow: 1px 1px 1px 1px #DCDCDC;
+	color: #000000;
+	padding: 35px;
+	width: 89.5%;
+	min-width: 300px;
+	font-size: 15px;
+	background: white;
+	font-family: 'Francois One', sans-serif;
+	float: left;
+}
+
+#highlights
+{
+	position: relative;
+	top: 190%;
+	left: 2%;
+	height: 290px;
+	box-shadow: 1px 1px 1px 1px #DCDCDC;
+	color: #000000;
+	padding: 35px;
+	width: 30%;
+	min-width: 300px;
+	font-size: 15px;
+	background: white;
+	font-family: 'Francois One', sans-serif;
+	float: left;
+}
+
+@media screen and (max-width: 800px)
+{
+	#content
+	{
+		width: 100%;
+		left: 0%;
+	}
+}
+
+
+
 .mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
   
-  position: absolute;
-  top: 131px;
-  left: -5px;
-  width: 101%;
+  position: relative;
+  top: -17px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-container > .mySlides >img
+{
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	width: auto;
 }
 
 /* Caption text */
@@ -180,4 +394,25 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+
+
+@media screen and (max-width: 650px)
+{
+	  ul.topnav
+	  {
+	  	margin-left: 0%;
+	  }
+
+	  ul.topnav li 
+	  {
+	  	float: none;
+	  }
+
+	  .slideshow-container
+	  {
+	  		position: relative;
+	  		top: 20px;
+	  }
+
+}
 	
