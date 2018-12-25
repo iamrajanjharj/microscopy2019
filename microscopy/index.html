@@ -10,13 +10,33 @@
 	
 	<style type="text/css">
 	
-
+		#content>h2,#highlights>h2,#map>h2
+		{
+			font-family: 'Francois One', sans-serif;
+			font-weight: normal;
+			background: #333;
+			width: auto;
+			color: #FFF;
+			text-align: center;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
 
 	
 	</style>
 
 	<script type="text/javascript" src="script/jquery.js"></script>
 	<script type="text/javascript" src="script/index.js"></script>
+	<script>
+		function myMap() {
+		var mapProp= {
+		  center:new google.maps.LatLng(25.4920,81.8639),
+		  zoom:13,
+		};
+		var map = new google.maps.Map(document.getElementById("mmap"),mapProp);
+		}
+	</script>
 
 </head>
 <body>
@@ -36,29 +56,10 @@
 
 			</CENTER>
 
-		<!--	<div id="menu" title="Menu">
-
-				<div class="menu_line"></div>
-				<div class="menu_line"></div>
-				<div class="menu_line"></div>
-			
-		    </div> -->
-
 
 
 			
 		</div>
-
-
-		<!-- <div id="menu_container">
-
-			<ul>
-				<li><div class="menu_item">About us</div></li>
-				<li><div class="menu_item">Events</div></li>
-				<li><div class="menu_item">Contact us</div></li>
-			</ul>
-			
-		</div> -->
 
 
 		<br>
@@ -66,11 +67,10 @@
 		<div id="navBar">
 					<ul class="topnav">
 					  <li><a class="active" href="/microscopy">Home</a></li>
-					  <li><a href="#news">About</a></li>
+					  <li><a href="about.html">About</a></li>
 					  <li><a href="abstract.html">Submit an Abstract</a></li>
-					  <li><a href="#registration">Registration</a></li>
-					  <li><a href="#contact">Awards</a></li>
-					  <li><a href="#about">Contact</a></li>
+					  <li><a href="registration.html">Registration</a></li>
+					  <li><a href="#footer" id="contact">Contact</a></li>
 					</ul>
 		</div>
 
@@ -98,26 +98,156 @@
 
 		</div>
 
-	 <!-- <div id="content">
-			<h2 style="border-bottom: 2px solid #DCDCDC;">What are Foldscopes?</h2>
-			<p><img src="img/mirco1.jpg" style="float:right;height:200px;width: 200px;border-radius: 200px;"> Foldscopes are origami microscopes that have the potential to change the way we view life and microorganisms around us. Invented a few years ago by Manu Prakash and Jim Cybulski from Stanford University, these pocket-sized tools are now making their way to biodiverse, yet remote parts of the world. A Foldscope Can be assembled from a punched sheet of cardstock, a spherical glass lens, a light emitting diode and a diffuser panel, along with a watch battery that powers the LED. The Foldscope weighs 8 grams and comes in a kit with multiple lenses that provide magnification from 140X to 2,000X. The kit also includes magnets that can be stuck onto the Foldscope to attach it to a smartphone, allowing the user to take pictures of the magnification. A Foldscope can be assembled in seven minutes.</p>
- 			<p>The magnification power is enough to enable the spotting of organisms such as Leishmania, Escherichia coli and malarial parasites. </p>
+		<div id="highlights">
+			<h2>Conference Highlights</h2><br>
+			<ul style="list-style: circle;">
+				<li><h3 style="background: #DCDCDC;border-radius: 3px;color:#333;padding: 5px;">Paper presentation opportunity in front of lead scientists.</h3></li>
+				<li><h3 style="background: #DCDCDC;border-radius: 3px;color:#333;padding: 5px;">A platform for research collaboration and discussion.</h3></li>
+				<li><h3 style="background: #DCDCDC;border-radius: 3px;color:#333;padding: 5px;">Best paper presentation awards.</h3></li>
+				<li><h3 style="background: #DCDCDC;border-radius: 3px;color:#333;padding: 5px;">Best microscopy picture award.</h3></li>
+				<li><h3 style="background: #DCDCDC;border-radius: 3px;color:#333;padding: 5px;">Best Foldscope microscopy award.</h3></li>
+				<li>
+					<h3 style="background: #DCDCDC;border-radius: 3px;color:#333;padding: 5px;">Young Scientist Awards</h3>
+				</li>
+			</ul>
 		</div>
 
-		<div id="highlights">
-			<h2 style="border-bottom: 2px solid #DCDCDC;">Conference Highlights</h2>
-			<ul>
-				<li>Paper presentation opportunity in front of lead scientists.</li>
-				<li>A platform for research collaboration and discussion.</li>
-				<li>Best paper presentation awards.</li>
-				<li>Best microscopy picture award.</li>
-				<li>Best Foldscope microscopy award.</li>
-				<li>Special session on collaboration and twinning, you may find your partner for collaboration and twinning</li>
-			</ul>
-		</div> -->
+	 	<div id="content">
+	 		<h2>Noticeboard</h2>
+	 		<p style="color: red;">
+	 			<img src="img/star.gif" />
+	 			Selected full length may also be considered for publication in conference proceedings or in the form of &#34;Book Chapter&#34; in upcoming book (Transcation in Microbiology).  
+				Please show your willingness for the same during abstract submission.
+	 		</p>
 
+	 		<p style="color: red;">
+	 			<img src="img/star.gif" />
+	 			Incomplete or registration form without demand draft/fee shall be rejected.
+				A separate registration form should be used for every delegate
+				Registration fee is non-refundable.
+	 		</p>
+
+	 		<hr color="#333" size="2">
+
+	 		<h2>FAQs</h2>
+
+	 		<h2 style="background: #DCDCDC;color: #333;">Eligibility</h2>
+	 		<p>
+	 			Faculty/scientist/Principal Investigators of foldscope project/ Research Students/Ph.D. students/others who are working in the area of Microscopy or want to come across with foldscope and microscopy research. 
+	 		</p>
+
+	 		<h2 style="background: #DCDCDC;color: #333;">Accomodation</h2>
+
+	 		<p>
+	 			The participants may be provided accommodation in the institute guest house and/or hostel depending on the availability, on payment basis. Accommodation can also be booked in nearby hotels directly or through organizers on payment basis.
+	 		</p>
+
+	 		<h2 style="background: #DCDCDC;color: #333;">Food</h2>
+	 		<p>
+	 			A registration kit, Lunch, Dinner and High Tea/Tea shall be provided to the participants during the course of conference (charges are included in the registration fee).
+	 		</p>
+
+	 		<hr color="#333" size="2">
+
+	 		<h2 style="background: #DCDCDC;color: #333;">Organizing Committee</h2>
+	 		<ul style="list-style: none;">
+	 			<li>
+	 				<b>Patron</b><br>
+	 				Prof. Rajeev Tripathi, Director, MNNIT Allahabad, Prayagraj
+	 			</li>
+	 			<li>
+	 				<b>Chairman</b><br>
+	 				Dr. N.K. Singh, Head, Department of Biotechnology, MNNIT Allahabad, Prayagraj
+	 			</li>
+	 		</ul>
+
+
+	 	<!--	<h2>Program Schedule</h2><br>
+
+	 		<table>
+	 			<tr style="background: #4CAF50;color: #333;font-weight: normal;">
+	 				<th>Date &amp; Day</th>
+	 				<th>Time</th>
+	 				<th>Activity/Topic</th>
+	 			</tr>
+	 			<tr>
+	 				<td rowspan="10" style="background: #DCDCDC;color: #333;font-weight: normal;">Day-1 <br> 15<sup>th</sup> march 2018</td>
+	 				<td>9:00 - 10:00</td>
+	 				<td>Registration</td>
+	 			</tr>
+	 			<tr>
+	 				<td>10:00 - 10:30</td>
+	 				<td>Inaugural session</td>
+	 			</tr>
+	 			<tr style="background: #DCDCDC;">
+	 				<td></td>
+	 				<td>High Tea</td>
+	 			</tr>
+	 			<tr>
+	 				<td>11:30 - 13:00</td>
+	 				<td>Workshop-1 <br> (Folding session) </td>
+	 			</tr>
+	 			<tr style="background: #DCDCDC;">
+	 				<td></td>
+	 				<td>Lunch</td>
+	 			</tr>
+	 			<tr>
+	 				<td>14:00 - 15:30</td>
+	 				<td>Workshop-2 <br> (Sample preparation and visualization)</td>
+	 			</tr>	 			
+	 			<tr style="background: #DCDCDC;">
+	 				<td>15:30 - 16:00</td>
+	 				<td>Tea break</td>
+	 			</tr>
+	 			<tr>
+	 				<td>16:00 - 17:30</td>
+	 				<td>Workshop-2 (Continued...) <br> (Sample preparation and visualization)</td>
+	 			</tr>
+	 			<tr>
+	 				<td>17:30 - 19:00</td>
+	 				<td>Collaboration / Twinning session</td>
+	 			</tr>
+	 			<tr style="background: #DCDCDC;">
+	 				<td></td>
+	 				<td>Dinner</td>
+	 			</tr>
+	 			<tr style="background: #DCDCDC;">
+	 				<td>Day - 2</td>
+	 				<td>08:00 AM onwards</td>
+	 				<td>Field trip / Site visits</td>
+	 			</tr>
+
+	 		</table> -->
+
+		</div>
+		
+		<div id="map">
+			<h2>How to reach MNNIT Allahabad?</h2>
+			<p style="font-size: 13px;">
+				<b>The city of Prayagraj</b> is the sacred city of india where three holy rivers namely Ganga, Yamuna and invisible mythological Saraswati meet. The famous Kumbh is organised here after every twelve years where hundreds of million people gather for holy bath.
+			</p>
+			<p style="color: red;">
+				Prayagraj is well connected to major cities like Lucknow, Kanpur, Varanasi and Delhi via Airways, Railways and Roadways
+			</p>
+			<!-- <div id="mmap" style="width: 100%;height: 70%;"></div> -->
+		</div>
+
+		<div id="footer" name="footer">
+			<b>Organised by:</b> Dr. Vishnu Agarwal | 
+			Convener & Organizing Secretary 
+			| Department of Biotechnology <br>
+			Motilal Nehru National Institute of Technology Allahabad | 
+			Prayagraj-211004 (India) | 
+			Phone:91-5322271235; Fax:91-5322545341 | 
+			Mobile:+919235682651, +916392651837 | 
+			Email:vishnua@mnnit.ac.in<br>
+			<b>Created by: </b>Rajan Jha
+		  	<a href="https://www.github.com/iamrajanjharj" target="_blank">Github</a> | <a href="https://www.facebook.com/urbanbrahmin" target="_blank">Facebook</a> | <a href="mailto:jharajan20@gmail.com" target="_blank">Email</a>
+		</div>
 </div>
+	
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBffUejp_7yfBdW_Xab5b6sQYvnUkNUcko&callback=myMap"></script>
 	<script>
 var slideIndex = 0;
 showSlides();

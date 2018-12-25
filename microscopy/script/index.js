@@ -1,9 +1,26 @@
 $(document).ready(function()
 	{
+
+		if($(window).width() < 800)
+		{
+			
+		}
+
 		$("#menu").click(function()
 			{
 				$("#cover").fadeIn();
 				$("#menu_container").fadeIn();				
+			});
+
+		$("#contact").click(function()
+			{
+				$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+				$("#footer").animate({
+					fontSize: "12.8px"
+				},1000);
+				$("#footer").animate({
+					fontSize: "12px"
+				},1000);
 			});
 
 		$("#cover").click(function()
@@ -18,6 +35,7 @@ $(document).ready(function()
 
 		$("#asubmit").click(function()
 		{
+
 			var title = $("#title").val();
 			var name = $("#name").val();
 			var email = $("#email").val();
@@ -53,6 +71,8 @@ $(document).ready(function()
 						alert("Full Paper must be upto 2500 words.");
 				}
 
+				$(this).prop("disabled",true);
+
 				$.post('back.php',{title:title,name:name,email:email,mobile:mobile,choice:choice,abstract:abstract,awards:awards},function(data)
 					{
 						if(data == 0)
@@ -68,7 +88,7 @@ $(document).ready(function()
 						else
 						{
 							alert("Your submission have been recorded.");
-							window.location = "/";
+							window.location = "/microscopy";
 						}
 
 					});

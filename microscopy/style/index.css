@@ -90,7 +90,7 @@
 	  list-style-type: none;
 	  font-size: 16px;
 	  margin: 0;
-	  margin-left: 30%;	
+	  margin-left: 33%;	
 	  padding: 0;
 	  overflow: hidden;
 	  background-color: #333;
@@ -173,6 +173,7 @@
 		{
 			font-size: 16px;
 			top: -15px;
+
 		}
 
 		#title2
@@ -223,117 +224,163 @@
 			top: -77px;
 			left: 11%;
 		}
-
-		#menu
-		{
-			top: 62px;
-			height: 35px;
-			width: 35px;
-			left: 89%;
-		}
-
-		#menu>.menu_line
-		{
-			margin-top: 3px;
-			margin-bottom: 5px;
-		}
 	}
 
 	#logo
 	{
 		position: relative;
 		float: left;
+		margin-left: 10px;
+		margin-top: -1px;
 	}
-
-
-
-#menu_container
-{
-	position: absolute;
-	background: #bf1918;
-	display: none;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	min-width: 300px;
-	box-shadow: 0px 0px 1px 1px #000000;
-	z-index: 1000;
-}
-
-#menu_container>ul
-{
-	list-style: none;
-}
-
-
-.menu_item
-{
-	position: relative;
-	height: 45px;
-	cursor: pointer;
-	text-decoration: none;
-	top: -15px;
-	text-align: center;
-	padding-top: 15px;
-	right: 40px;
-	width: 115.5%;
-	font-size: 110%;
-	font-weight: normal;
-	font-family: 'Francois One', sans-serif;
-	border-bottom: 1px solid #FFFFFF;
-	transition: background-color ease-out 1s;
-}
-
-.menu_item:hover
-{
-	text-decoration: underline;
-	background: #e74c3c;
-}
 
 
 
 #content
 {
 	position: relative;
-	top: 100%;
-	left: 2%;
+	border: 1px solid #000;
+	top: 0px;
+	left: -1%;
 	box-shadow: 1px 1px 1px 1px #DCDCDC;
 	color: #000000;
-	padding: 35px;
-	width: 89.5%;
-	min-width: 300px;
-	font-size: 15px;
+	padding: 13px;
+	width: 45%;
+	font-size: 12.5px;
 	background: white;
 	font-family: 'Francois One', sans-serif;
-	float: left;
+	float: right;
+	height: 655px;
+}
+
+#content > table
+{
+	table-layout: auto;
+}
+
+#content > table,th,td
+{
+	border: 1px solid #000;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	border-collapse: collapse;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 #highlights
 {
 	position: relative;
-	top: 190%;
+	border: 1px solid #000;
+	top: 0px;
 	left: 2%;
-	height: 290px;
 	box-shadow: 1px 1px 1px 1px #DCDCDC;
 	color: #000000;
-	padding: 35px;
-	width: 30%;
-	min-width: 300px;
+	padding: 15px;
+	width: 45%;
 	font-size: 15px;
 	background: white;
 	font-family: 'Francois One', sans-serif;
 	float: left;
 }
 
-@media screen and (max-width: 800px)
+#map
+{
+	position: relative;
+	border: 1px solid #000;
+	top: 20px;
+	height: 175px;
+	left: 2%;
+	box-shadow: 1px 1px 1px 1px #DCDCDC;
+	color: #000000;
+	padding: 15px;
+	width: 45%;
+	font-size: 15px;
+	background: white;
+	font-family: 'Francois One', sans-serif;
+	float: left;
+}
+
+#mmap
+{
+
+	border: 1px solid #000;
+	position: relative;
+	float: left;
+	top: -8px;
+}
+
+#footer
+{
+	position: absolute;
+	bottom: -3%;
+	text-align: center;
+	left: 0;
+	color: #000000;
+	padding: 5px;
+	width: 100%;
+	font-size: 12px;
+	height: 30px;
+	background: #4CAF50;
+	font-family: 'Francois One', sans-serif;
+}
+
+@media screen and (max-width: 900px)
 {
 	#content
 	{
-		width: 100%;
-		left: 0%;
+		width: 89%;
+		float: none;
+		left: 2%;
+		min-width: 250px;
+		top: 20px;
+		height: auto;
+	}
+
+	#highlights
+	{
+		width: 89%;
+		float: none;
+		left: 2%;
+		top: 4px;
+		min-width: 250px;
+	}
+
+	#map
+	{
+		float: none;
+		top: 40px;
+		width: 89%;
+		left: 2%;
+		font-size: 12px;
+		min-width: 250px;
+
+	}
+
+	#footer
+	{
+		height: 40px;
+		bottom: -5%;
 	}
 }
 
+
+@media screen and (max-width: 550px)
+{
+	#footer
+	{
+		height: 79px;
+		bottom: -6%;
+	}
+
+	#map
+	{
+		top: 35px;
+	}
+}
 
 
 .mySlides {display: none;}
@@ -354,17 +401,6 @@
 	max-width: 100%;
 	height: auto;
 	width: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 .active {
@@ -389,12 +425,6 @@
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
 
 @media screen and (max-width: 650px)
 {
@@ -411,7 +441,7 @@
 	  .slideshow-container
 	  {
 	  		position: relative;
-	  		top: 20px;
+	  		top: -17px;
 	  }
 
 }
