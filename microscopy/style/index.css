@@ -1,7 +1,7 @@
 	body
 	{
 		color: #FFFFFF;
-		background: whitesmoke;
+		background: white;
 		font-family: sans-serif;
 	}
 
@@ -19,7 +19,7 @@
 		top: 0;
 		left: 0;
 		display: none;
-		height: 100vh;
+		height: 200vh;
 		width: 100vw;
 		opacity: 0.7;
 		background: #000000;
@@ -31,12 +31,12 @@
 		position: relative;
 		top:0;
 		left: 0;
-		background: #bf1918;
+		background: white;
+		color: #4cd137;
 		font-family: 'Francois One', sans-serif;
 		padding: 5px;
-		height: 120px;
+		height: 135px;
 		width: 99.2%;
-		box-shadow: 0px 0px 8px 0px #000000;
 	}
 
 	#title1
@@ -80,17 +80,28 @@
 	{
 		position: relative;
 		height: auto;
-		width: 100%;
+		width: 95%;
 		top: -17.7px;
-		left: 0;
+		left: 2%;
 		background: #333333;
+	}
+
+	#textscroll
+	{
+		position: relative;
+		height: auto;
+		width: 95%;
+		top: -17.7px;
+		left: 2%;
+		color: #333333;
+		background: #FFFFFF;	
 	}
 
 		ul.topnav {
 	  list-style-type: none;
 	  font-size: 16px;
 	  margin: 0;
-	  margin-left: 33%;	
+	  margin-left: 25%;	
 	  padding: 0;
 	  overflow: hidden;
 	  background-color: #333;
@@ -163,7 +174,7 @@
 
 		#title4
 		{
-			font-size: 12px;
+			font-size: 15px;
 		}
 	}
 
@@ -184,16 +195,16 @@
 
 		#title3
 		{
-			font-size: 15px;
-			top: -57px;
-			left: 1%;
+			font-size: 13px;
+			top: -53px;
+			left: 9.5%;
 		}
 
 		#title4
 		{
 			font-size: 12px;
 			top: -70px;
-			left: 9%;
+			left: 10%;
 		}
 	}
 
@@ -213,16 +224,16 @@
 
 		#title3
 		{
-			font-size: 13px;
+			font-size: 12px;
 			top: -55px;
-			left: 11%;
+			left: 13%;
 		}
 
 		#title4
 		{
 			font-size: 11px;
-			top: -77px;
-			left: 11%;
+			top: -72px;
+			left: 13%;
 		}
 	}
 
@@ -230,7 +241,7 @@
 	{
 		position: relative;
 		float: left;
-		margin-left: 10px;
+		margin-left: 40px;
 		margin-top: -1px;
 	}
 
@@ -241,7 +252,7 @@
 	position: relative;
 	border: 1px solid #000;
 	top: 0px;
-	left: -1%;
+	left: -3%;
 	box-shadow: 1px 1px 1px 1px #DCDCDC;
 	color: #000000;
 	padding: 13px;
@@ -278,12 +289,10 @@
 	top: 0px;
 	left: 2%;
 	box-shadow: 1px 1px 1px 1px #DCDCDC;
-	color: #000000;
 	padding: 15px;
 	width: 45%;
-	font-size: 15px;
+	font-size: 12px;
 	background: white;
-	font-family: 'Francois One', sans-serif;
 	float: left;
 }
 
@@ -390,8 +399,8 @@
   
   position: relative;
   top: -17px;
-  left: 0px;
-  width: 100%;
+  left: 2%;
+  width: 95%;
   height: auto;
 }
 
@@ -445,4 +454,77 @@
 	  }
 
 }
-	
+
+@keyframes change1
+{
+	0%
+	{
+		color: #333333;
+	}
+
+	50%
+	{
+		color: yellow;
+	}
+
+	100%
+	{
+		color: #333333;
+	}
+}
+
+@keyframes change2
+{
+	0%
+	{
+		color: #333333;
+	}
+
+	50%
+	{
+		color: red;
+	}
+
+	100%
+	{
+		color: #333333;
+	}
+}
+
+
+@keyframes change3
+{
+	0%
+	{
+		color: #333333;
+	}
+
+	50%
+	{
+		color: brown;
+	}
+
+	100%
+	{
+		color: #333333;
+	}
+}
+
+@keyframes change4
+{
+	0%
+	{
+		color: #333333;
+	}
+
+	50%
+	{
+		color: green;
+	}
+
+	100%
+	{
+		color: #333333;
+	}
+}
+
