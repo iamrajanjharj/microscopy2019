@@ -13,7 +13,7 @@
 
 	function emailCheck($email)
 	{
-		$con = mysqli_connect('localhost','root','','visagr3_cnf');
+		$con = mysqli_connect('localhost','','','');
 		$q = "SELECT count(*) FROM abstract WHERE email='$email'";
 		$qq = mysqli_query($con,$q) or die(mysqli_error($con));
 		$n = mysqli_fetch_row($qq) or die(mysqli_error($con));
@@ -25,7 +25,7 @@
 
 	function mobileCheck($mobile)
 	{
-		$con = mysqli_connect('localhost','root','','visagr3_cnf');
+		$con = mysqli_connect('localhost','','','');
 		$q = "SELECT count(*) FROM abstract WHERE mobile='$mobile'";
 		$qq = mysqli_query($con,$q) or die(mysqli_error($con));
 		$n = mysqli_fetch_row($qq) or die(mysqli_error($con));
